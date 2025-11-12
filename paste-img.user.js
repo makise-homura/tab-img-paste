@@ -4,11 +4,11 @@
 // @description  upload images by pasting them
 // @author       badunius, makise_homura
 // @grant        none
-// @match        https://tabun.everypony.ru
-// @match        https://tabun.everypony.online
-// @match        https://tabun.everypony.info
-// @match        https://tabun.everypony.me
-// @match        https://tabun.me
+// @match        https://tabun.everypony.ru/*
+// @match        https://tabun.everypony.online/*
+// @match        https://tabun.everypony.info/*
+// @match        https://tabun.everypony.me/*
+// @match        https://tabun.me/*
 // @downloadURL  https://github.com/makise-homura/tab-img-paste/raw/refs/heads/master/paste-img.user.js
 // @updateURL    https://github.com/makise-homura/tab-img-paste/raw/refs/heads/master/paste-img.user.js
 // ==/UserScript==

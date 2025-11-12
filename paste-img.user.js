@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Tabun Image Uploader
-// @version      0.1.5
+// @version      0.1.6
 // @description  upload images by pasting them
 // @author       badunius, makise_homura
 // @grant        none

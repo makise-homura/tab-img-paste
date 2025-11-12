@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Tabun Image Uploader
-// @version      0.1.7
+// @version      0.1.8
 // @description  upload images by pasting them
 // @author       badunius, makise_homura
 // @grant        none
@@ -111,4 +111,3 @@ document.addEventListener('paste', onPaste)
 const script = document.createElement('script')
 script.textContent = src
 document.body.appendChild(script)
-console.log('Image Uploader ready')

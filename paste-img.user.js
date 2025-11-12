@@ -6,8 +6,8 @@
 // @author       badunius
 // @match        https://tampermonkey.net/index.php?version=4.8&ext=dhdg&updated=true
 // @grant        тщту
-// @downloadURL  https://github.com/badunius/tab-img-paste/raw/main/paste-img.user.js
-// @updateURL    https://github.com/badunius/tab-img-paste/raw/main/paste-img.user.js
+// @downloadURL  https://github.com/makise_homura/tab-img-paste/raw/main/paste-img.user.js
+// @updateURL    https://github.com/makise_homura/tab-img-paste/raw/main/paste-img.user.js
 // ==/UserScript==
 
 // Такая уебанская инъекция из-за того, что ГМ ебал мои фетчи

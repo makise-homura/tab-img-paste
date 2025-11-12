@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Tabun Image Uploader
-// @version      0.1.6
+// @version      0.1.7
 // @description  upload images by pasting them
 // @author       badunius, makise_homura
 // @grant        none
@@ -34,8 +34,22 @@ const getImage = (items) => {
             return item.getAsFile()
         }
     }
-    
     return null
+}
+
+const showUploadAlert = (action) => {
+    if (action) {
+        var p = document.createElement("section")
+        p.className = "spoiler";
+        p.id = "uploadAlert"
+        var q = document.createElement("div")
+        q.style = "position: fixed; top: 50%; left: 50%; margin-top: -25px; margin-left: -50px; width: 100px; height: 50px; align-content: center; text-align: center; cursor: auto;"
+        q.className = "spoiler-title"
+        q.innerHTML = "Вставляю..."
+        p.appendChild(q)
+        document.body.appendChild(p)
+    }
+    else document.body.removeChild(document.getElementById("uploadAlert"))
 }
 
 /**
@@ -46,12 +60,12 @@ const sendImage = async (image) => {
     form.append('img_file', image)
     form.append('title', '')
     form.append('security_ls_key', getKey())
-  
+
     const res = await fetch('/ajax/upload/image/', {
         method: 'POST',
         body: form
     })
-  
+
     const text = await res.text()
 
     const json = JSON.parse(new DOMParser().parseFromString(text, 'text/html').querySelector('textarea').textContent)
@@ -71,6 +85,8 @@ const pasteTag = (target, data) => {
     const after = text.slice(end)
     const middle = data.sText || ''
 
+    showUploadAlert(false)
+
     target.value = before + middle + after
     target.selectionStart = start
     target.selectionEnd = start + middle.length
@@ -82,7 +98,8 @@ const onPaste = (evt) => {
     const  { items } = evt.clipboardData
     const image = getImage(items)
     if (!image) { return }
-    
+
+    showUploadAlert(true)
     sendImage(image)
         .then(res => pasteTag(evt.target, res))
 }

@@ -9,8 +9,8 @@
 // @match        https://tabun.everypony.info
 // @match        https://tabun.everypony.me
 // @match        https://tabun.me
-// @downloadURL  https://github.com/makise_homura/tab-img-paste/raw/main/paste-img.user.js
-// @updateURL    https://github.com/makise_homura/tab-img-paste/raw/main/paste-img.user.js
+// @downloadURL  https://github.com/makise-homura/tab-img-paste/raw/refs/heads/master/paste-img.user.js
+// @updateURL    https://github.com/makise-homura/tab-img-paste/raw/refs/heads/master/paste-img.user.js
 // ==/UserScript==
 
 const src = `

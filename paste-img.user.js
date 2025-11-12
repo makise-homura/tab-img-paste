@@ -1,17 +1,18 @@
 // ==UserScript==
 // @name         Tabun Image Uploader
-// @include      https://tabun.everypony.*
-// @version      0.1.4
+// @version      0.1.5
 // @description  upload images by pasting them
-// @author       badunius
-// @match        https://tampermonkey.net/index.php?version=4.8&ext=dhdg&updated=true
-// @grant        тщту
+// @author       badunius, makise_homura
+// @grant        none
+// @match        https://tabun.everypony.ru
+// @match        https://tabun.everypony.online
+// @match        https://tabun.everypony.info
+// @match        https://tabun.everypony.me
+// @match        https://tabun.me
 // @downloadURL  https://github.com/makise_homura/tab-img-paste/raw/main/paste-img.user.js
 // @updateURL    https://github.com/makise_homura/tab-img-paste/raw/main/paste-img.user.js
 // ==/UserScript==
 
-// Такая уебанская инъекция из-за того, что ГМ ебал мои фетчи
-// Что ж, это взаимно, сучёныш
 const src = `
 /**
  * Returns LS security key
